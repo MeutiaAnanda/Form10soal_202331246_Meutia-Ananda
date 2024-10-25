@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meumi Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ENTER>
+    <h1>Isi Data Pesanan</h1>
+    <form action="output.html">
+        <table>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td><input type="text" name="nama" id="nama" required autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="Nomor">Nomor Telepon</label></td>
+                <td><input type="text" name="nomor" id="nomor" placeholder="Silahkan Masukan Nomor" pattern="[0-9]{12}" required title="Harus diisi 12 angka"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email <span class="required">*</span></label></td>
+                <td><input type="Email" id="Email" name="Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="Ukuran">Ukuran</label></td>
+                <td><select name="Ukuran" id="Ukuran">
+                    <option value="pilih Diameter Kue">Pilih Diameter Kue</option>
+                    <option value="10 cm">10 cm</option>
+                    <option value="18 cm">18 cm</option>
+                    <option value="25 cm">25 cm</option>
+                    <option value="30 cm">30 cm</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="Flavour">Flavour</label></td>
+                <td><select name="Flavour" id="Flavour">
+                    <option value="pilih Flavour">Pilih Flavour</option>
+                    <option value="Coklat">Coklat</option>
+                    <option value="Tiramisu">Tiramisu</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Vanilla">Vanilla</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="Tanggal pengantaran">Tanggal Pengantaran</label></td>
+                <td><input type="date" name="TanggalPesanan" id="TanggalPesanan"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat pengantaran">Alamat pengantaran</label></td>
+                <td><textarea name="alamat" id="alamat" cols="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Deskripsikan Desain kue">Deskripsikan Desain kue</label></td>
+                <td><input type="text" name="Deskripsikan Desain kue" id="Deskripsikan Desain kue"></td>
+            </tr>
+            <tr>
+                <td><label for="at">Pilih Metode Pengantaran</label></td>
+                <td><input type="radio" name="at" id="at" value="Diantar Kurir"> <label for="Diantar Kurir">Diantar Kurir</label></td>
+                <td><input type="radio" name="at" id="at" value="Jemput Di Toko"> <label for="Jemput Di Toko">Jemput Di Toko</label></td>
+            </tr>
+            <tr>
+                <td><label for="ck">Silahkan tinggalkan pesan disini</label></td>
+                <td><input type="text" name="ck" id="ck" ></td>
+            </tr>
+        </table>
+        <input type="submit" value="Simpan">
+    </form>
+</body>
+</html>
